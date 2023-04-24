@@ -5,7 +5,6 @@
     "mikestead.dotenv",
     "csstools.postcss",
     "bradlc.vscode-tailwindcss",
-    "Orta.vscode-jest",
-    "msjsdiag.vscode-react-native"
+    "Orta.vscode-jest"
   ]
 }
