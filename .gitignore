@@ -1,0 +1,43 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# expo
+.expo/
+android
+ios
+index.js
+
+# production
+dist/
+web-build/
+
+# debug
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.vscode/.react
+
+# misc
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+*.pem
+Thumbs.db
+
+# macOS
+.DS_Store
+
+# local env files
+.env*.local
+
+# Temporary files created by Metro to check the health of the file watcher
+.metro-health-check*

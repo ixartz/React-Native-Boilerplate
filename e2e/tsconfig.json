@@ -1,0 +1,8 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "isolatedModules": false
+  },
+  "include": ["**/*.ts"],
+  "exclude": []
+}
