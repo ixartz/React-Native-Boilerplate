@@ -7,8 +7,8 @@
     "dev:android": "expo start --android",
     "dev:ios": "expo start --ios",
     "web": "expo start --web",
-    "build:android": "expo run:android",
-    "build:ios": "expo run:ios",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
     "clean": "rimraf .expo android coverage ios index.js",
     "lint": "eslint .",
     "format": "eslint --fix . && prettier '**/*.{json,yaml}' --write --ignore-path .gitignore",
@@ -24,7 +24,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "expo": "~48.0.16",
+    "expo": "~48.0.15",
     "expo-constants": "^14.2.1",
     "expo-linking": "^4.0.1",
     "expo-router": "^1.5.3",
