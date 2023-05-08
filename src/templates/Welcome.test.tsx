@@ -1,13 +1,13 @@
 import { render, screen } from '@testing-library/react-native';
 
-import { Main } from './Main';
+import { Welcome } from './Welcome';
 
 describe('App component', () => {
   describe('Render method', () => {
     it('should render the default text', () => {
-      render(<Main />);
+      render(<Welcome />);
 
-      const text = screen.queryByText(/Open up App.js/);
+      const text = screen.queryByText(/Open up App\//);
       expect(text).toBeVisible();
     });
   });
