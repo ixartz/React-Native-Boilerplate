@@ -9,7 +9,7 @@
     "web": "expo start --web",
     "android": "expo run:android",
     "ios": "expo run:ios",
-    "clean": "rimraf .expo android coverage ios index.js",
+    "clean": "rimraf .expo android coverage ios",
     "lint": "eslint .",
     "format": "eslint --fix . && prettier '**/*.{json,yaml}' --write --ignore-path .gitignore",
     "check-types": "tsc --noEmit --pretty",
