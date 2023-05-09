@@ -41,7 +41,7 @@ jobs:
       matrix:
         node-version: [16.x]
 
-    name: Run all tests
+    name: Run E2E tests
     runs-on: macos-latest
 
     steps:
@@ -64,6 +64,6 @@ jobs:
           HOMEBREW_NO_INSTALL_CLEANUP: 1
 
       - name: Run E2E preparation
-        run: npm run e2e:prepare
+        run: npx expo prebuild --platform ios
       - name: Run E2E tests on Android
-        run: npm run e2e:android
+        run: npm run e2e:ios
