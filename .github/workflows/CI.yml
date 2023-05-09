@@ -35,3 +35,35 @@ jobs:
 
       - name: Run unit tests
         run: npm run test
+
+  e2e:
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    name: Run all tests
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # Retrieve Git history, needed to verify commits
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
+      - run: npm ci
+
+      - name: Install macOS dependencies
+        run: |
+          brew tap wix/brew
+          brew install applesimutils
+        env:
+          HOMEBREW_NO_AUTO_UPDATE: 1
+          HOMEBREW_NO_INSTALL_CLEANUP: 1
+
+      - name: Run E2E preparation
+        run: npm run e2e:prepare
+      - name: Run E2E tests on Android
+        run: npm run e2e:android
