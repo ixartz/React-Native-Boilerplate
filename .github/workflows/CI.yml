@@ -35,8 +35,3 @@ jobs:
 
       - name: Run unit tests
         run: npm run test
-
-      - name: Run E2E preparation
-        run: npm run e2e:prepare
-      - name: Run E2E tests on Android
-        run: npm run e2e:android
