@@ -28,6 +28,6 @@
       "favicon": "./assets/favicon.png",
       "bundler": "metro"
     },
-    "plugins": ["@config-plugins/detox"]
+    "plugins": ["@config-plugins/detox", "expo-router"]
   }
 }

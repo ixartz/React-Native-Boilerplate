@@ -27,7 +27,7 @@
     "expo": "^49.0.5",
     "expo-constants": "~14.4.2",
     "expo-linking": "~5.0.2",
-    "expo-router": "2.0.1",
+    "expo-router": "2.0.0",
     "expo-splash-screen": "~0.20.4",
     "expo-status-bar": "~1.6.0",
     "nativewind": "^2.0.11",
@@ -44,7 +44,7 @@
     "@testing-library/react-native": "^12.1.3",
     "@types/detox": "^18.1.0",
     "@types/jest": "^29.5.3",
-    "@types/react": "~18.0.38",
+    "@types/react": "~18.2.14",
     "@types/react-native": "^0.72.2",
     "@typescript-eslint/eslint-plugin": "^6.2.0",
     "@typescript-eslint/parser": "^6.2.0",
@@ -73,6 +73,6 @@
     "prettier": "^3.0.0",
     "rimraf": "^5.0.1",
     "tailwindcss": "3.3.2",
-    "typescript": "^5.1.6"
+    "typescript": "^5.1.3"
   }
 }
