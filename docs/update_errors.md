@@ -1,4 +1,4 @@
-# Update dependencies error
+# Errors when updating dependencies
 
 ## Use process(css).then(cb) to work with async plugins
 
